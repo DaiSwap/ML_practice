@@ -24,10 +24,16 @@ print(int("123")+int("34")) #str to int using int()
 
 A = len(input("Enter your name\n"))
 print("Number of letters in your name is:" + str(A)) # Did type conversion here
-'''
-# math op basic- PEMDASL/BODMAS
+
+# math op basic- PEMDASLR/BODMAS
 print(5/10)
 print(type(5/10))# implicit type casting
 print(5//10)
 print(2**2)# ** - exponent
+'''
+#f-strings - print(f""")
+score = 2
+height = 5.3
+is_winning = False
 
+print(f"Your score is = {score} and your height is {height} . You win might be {is_winning}")
