@@ -30,13 +30,13 @@ print('''
 #######################################################################
 ''')
 print("Welcome to Treasure Island.\n Your mission is to find the Treasure.\n You're at the crossroad.\n")
-A = input("Foloow proper instructions. Do you want to go left or right? Choose 'left' or 'right'\n")
+A = input("Foloow proper instructions. Do you want to go left or right? Choose 'left' or 'right'\n").lower()
 if A == "left":
     print("you have arrived at a lake\n")
-    B = input("choose whether to 'wait' for boat or 'swim'\n")
+    B = input("choose whether to 'wait' for boat or 'swim'\n").lower()
     if B == "wait":
         print("you took boat and reached")
-        C = input("you have 3 doors infront of you - 'RED'&'YELLOW'&'BLUE'\n")
+        C = input("you have 3 doors infront of you - 'RED'&'YELLOW'&'BLUE'\n").upper()
         if C =="RED":
             print("fire and you die")
         elif C=="YELLOW":
