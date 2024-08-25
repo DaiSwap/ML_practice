@@ -1,5 +1,5 @@
 # Conditional state/ logical operators& scope usage
-
+'''
 print("Welcome to Treasure Island.\n Your mission is to find the Treasure.\n You're at the crossroad.\n")
 A = int(input("Do you want to go left or right? choose 0 for left and 1 for right"))
 if A == 0:
@@ -19,14 +19,16 @@ else:
 height = int(input("tell your height in cm\n"))
 if height>=120:
     age = int(input("how old are you?\n"))
-    if age >= 18:
+    if age <= 12:
         print("it will be 10 bucks")
+    elif age <= 18:
+        print("it will be 15 bucks")
     else:
-        print("it will be 5 bucks")   
+        print("it will be 20 bucks")   
 else:
     print("not eligible")
 
-
+'''
 #check odd or even
 A = int(input("enter any number"))
 if (A%2) == 0:
