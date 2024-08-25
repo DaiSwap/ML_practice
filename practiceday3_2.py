@@ -14,7 +14,7 @@ elif A == 1:
     print("you have been attacked0")
 else:
     print("your journey ends here.Did not follow the instructions.")
-'''
+
 # simple if,nested if
 height = int(input("tell your height in cm\n"))
 if height>=120:
@@ -28,7 +28,7 @@ if height>=120:
 else:
     print("not eligible")
 
-'''
+
 #check odd or even
 A = int(input("enter any number"))
 if (A%2) == 0:
@@ -36,3 +36,16 @@ if (A%2) == 0:
 else:
     print("the number is odd")
 '''
+weight = float(input("enter your weight in kg\n"))
+height = float(input("enter your height in metres\n"))
+
+bmi = weight / (height ** 2)
+print(round(bmi,2))
+if bmi>=25:
+    print("Overweight")
+elif bmi>=18.5:
+    print("Normal")
+else:
+    print("Underweight")
+        
+        
