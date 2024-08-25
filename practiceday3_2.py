@@ -1,17 +1,28 @@
 # Conditional state/ logical operators& scope usage
-'''
+
 print("Welcome to Treasure Island.\n Your mission is to find the Treasure.\n You're at the crossroad.\n")
-A = int(input("Do you want to go left or right? choose 0 for left and 1 for right"))
-if A == 0:
-    print("you have aarrived at a lake\n")
-    B = input("choose whether to wait for boat or swim, choose 0 to wait,1 to swim")
-    if B == 0:
-        print("you reached")
+A = input("Foloow proper instructions. Do you want to go left or right? Choose 'left' or 'right'\n")
+if A == "left":
+    print("you have arrived at a lake\n")
+    B = input("choose whether to 'wait' for boat or 'swim'\n")
+    if B == "wait":
+        print("you took boat and reached")
+        C = input("you have 3 doors infront of you - 'RED'&'YELLOW'&'BLUE'\n")
+        if C =="RED":
+            print("fire and you die")
+        elif C=="YELLOW":
+            print("gas and you die")
+        elif C=="BlUE":
+            print("got tresure")
+        else:
+            print("journey ends here , did not follow instructions")
+    elif B=="swim":
+        print("you got attacked by croc and died")
     else:
-        print("you died")
+        print("your journey ends here , did not follow instructions")
     
-elif A == 1:
-    print("you have been attacked0")
+elif A == "right":
+    print("you have been attacked. The end")
 else:
     print("your journey ends here.Did not follow the instructions.")
 '''
@@ -38,7 +49,7 @@ if height>=120:
 else:
     print("not eligible")
 
-'''
+
 #check odd or even
 A = int(input("enter any number"))
 if (A%2) == 0:
