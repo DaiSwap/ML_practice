@@ -1,4 +1,5 @@
 #love calculator
+'''
 print("The Love Calculator is calculating your score...")
 name1 = input("enter your name").lower()
 name2 = input("enter your name").lower()
@@ -31,3 +32,17 @@ elif total>=40 and total<=50 :
     print(f"your score is {total}, you are alright together.")
 else:
     print(f"your score is {total}")
+'''   
+# after seeing solution -
+
+name1 = input("enter your name")
+name2 = input("enter your name")
+combined_name = (name1+name2).lower()
+t = combined_name.count("t")
+r = combined_name.count("r")
+u = combined_name.count("u")
+e = combined_name.count("e")
+first_digit = t + r + u + e
+#similarly for second digit
+score = str(first_digit)# + second_digit
+#hence finish with condiotional statements
