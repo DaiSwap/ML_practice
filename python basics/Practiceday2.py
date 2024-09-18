@@ -43,3 +43,5 @@ is_winning = False
 
 print(f"Your score is = {score} and your height is {height} . You win might be {is_winning}")
 '''
+# to print the doc string i.e. - """" """" do the below- 
+print(__doc__)
