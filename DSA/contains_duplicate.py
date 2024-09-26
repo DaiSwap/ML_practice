@@ -1,7 +1,9 @@
 #brute force it - sort and check each neighbours , 
 # O(nlogn) & O(1)
-for i in range(1,n-1):
-    if i==i-1:
+nums = [1,2,3,4,6,7,5,6]
+nums.sort()
+for i in range(1,len(nums)):
+    if nums[i]==nums[i-1]:
         return True
     else:
         return False
