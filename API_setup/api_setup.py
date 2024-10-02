@@ -23,7 +23,11 @@ def get_user(user_id):
         "email": "daiswap@exampe.com"
     }
 #query parameter     
-    
+    extra = request.args.get("extra")
+    if extra:
+        user_data["extra"] = extra
+        
+    return jsonify(user_data), 200 #flask parsing this value and returning as jsonify value & 200 is default status code for success
     
 
 if __name__ == "__main__":
