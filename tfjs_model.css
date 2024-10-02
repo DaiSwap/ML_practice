@@ -1,0 +1,171 @@
+.max-subheader .max-field {
+    display: flex;
+    flex-flow: column;
+    margin-right: 1.5rem;
+  }
+  .max-subheader .max-field.endpoint-field {
+    display: flex;
+    flex-grow: 1;
+    flex-flow: column;
+  }
+  .max-subheader .max-field.endpoint-field > .max-field {
+    max-width: 800px;
+    min-width: 300px;
+  }
+  
+  .max-main-content > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .left-side {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  .right-side {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    margin-top: 2rem;
+    max-width: 100%;
+  }
+  @media screen and (min-width: 800px) {
+    .left-side {
+      flex: 1;
+    }
+  
+    .right-side {
+      flex: 2;
+      margin-top: 3.125rem;
+      margin-left: 2rem;
+    }
+  }
+  
+  .left-side .max-toolbar {
+    background-color: #f3f3f3;
+    display: none;
+    margin: 0;
+    width: 100%;
+  }
+  .ready .left-side .max-toolbar {
+    display: flex;
+  }
+  .nomaxvis-annotate .max-menu-annotate {
+    display: none;
+  }
+  .nomaxvis-extract .max-menu-extract {
+    display: none;
+  }
+  .left-side .max-toolbar-menu-icon,
+  .left-side button.max-toolbar-menu {
+    width: initial;
+    height: initial;
+  }
+  .left-side .max-toolbar-menu:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: #f3f3f3 !important;
+  }
+  
+  .max-input-container {
+    display: inline-block;
+    padding: 1rem 0 0 0;
+    width: 100%;
+  }
+  .max-input-container img {
+    width: 100%;
+  }
+  .image-file {
+    display: inline-flex;
+  }
+  #selectedImage {
+    display: initial;
+  }
+  .video-button,
+  .left-side video,
+  #videoCanvas,
+  .max-vis-canvas,
+  .webcam .image-file,
+  .webcam #selectedImage {
+    display: none;
+    vertical-align: top;
+  }
+  .webcam .video-button {
+    display: inline-flex;
+    max-width: 10rem;
+  }
+  .webcam .left-side video,
+  .webcam #videoCanvas,
+  .webcam .max-vis-canvas {
+    display: initial;
+  }
+  
+  .left-side video,
+  #videoCanvas {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .right-side .max-loading,
+  #maxvisOutput,
+  #prediction {
+    display: none;
+  }
+  .right-side img {
+    display: initial;
+    max-height: calc(100vh - 15rem);;
+    max-width: 100%;
+  }
+  .right-side pre {
+    padding: 1rem;
+    background-color: #f3f3f3;
+    overflow: auto;
+  }
+  .right-side span.extract {
+    background-color: #f3f3f3;
+    display: inline-block;
+    margin: 0 1rem 1rem 0;
+    padding: 0.5rem;
+    vertical-align: top;
+  }
+  .right-side span.extract label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .right-side span.extract img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  body.busy .right-side .max-loading {
+    display: inline-block;
+  }
+  body.json #prediction {
+    display: block;
+    width: 100%;
+  }
+  body.vis #maxvisOutput {
+    display: block;
+    width: 100%;
+  }
+  
+  .max-log {
+    margin-bottom: 0.5rem;
+  }
+  .max-log > span {
+    display: block;
+    line-height: 1.1rem;
+  }
+  .max-log > span.max-error {
+    color: red;
+    font-family:  'IBM Plex Mono', monospace;
+  }
+  
+  .max-toolbar .max-loading svg circle {
+    stroke-width: 2;
+    animation-duration: 5000ms;
+    animation-timing-function: linear;
+  }
+  
