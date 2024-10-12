@@ -39,8 +39,30 @@ def walk():
 while not at_goal():
     walk()
 
-
+# above solution got stuck in an infinite loop of a square.
     
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+def walk():
+    
+    if right_is_clear():
+        turn_right()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()  
+
+while front_is_clear():
+    move()
+turn_left()    
+while not at_goal():
+    walk()
+
+#still very bad code , not optimized and takes lot of steps.    
     
     
 
