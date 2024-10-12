@@ -2,6 +2,6 @@
 # while something_is_true:
 #     do something , will stop if False
 i = 4
-while i>3:
+while i>3: #also while not i<3:
     print(i)
     break
