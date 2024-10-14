@@ -1,4 +1,4 @@
-#hangman part 1
+#hangman part 1 and part 2
 import random
 wordlist = ['template','baboon','shirts','dictate','typhoon']
 
