@@ -14,5 +14,6 @@ class Student:
         print(sum/3)
         
 s1 = Student("pv",[24,21,22])
-print("the avg marks of",s1.name,"is") ; s1.get_avg()        
+print("the avg marks of",s1.name,"is") 
+s1.get_avg()        
                
